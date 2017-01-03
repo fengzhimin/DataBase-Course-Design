@@ -1,0 +1,887 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\StudentManageSys.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""    // 打印/打印预览资源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\StudentManageSys.ico"
+IDR_StudentManageSyTYPE ICON                    "res\\StudentManageSysDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_Logining     BITMAP                  "res\\未标题-1.bmp"
+IDB_BITMAP_Back         BITMAP                  "res\\Back.bmp"
+IDB_BITMAP_Login        BITMAP                  "res\\Login1.bmp"
+IDB_BITMAP_Register     BITMAP                  "res\\Register1.bmp"
+IDB_BITMAP_Search       BITMAP                  "res\\Search1.bmp"
+IDB_BITMAP_StuInfo      BITMAP                  "res\\Stu_Info.bmp"
+IDB_BITMAP_SETUSER      BITMAP                  "res\\SetUser.bmp"
+IDB_BITMAP_CONFIRM      BITMAP                  "res\\confirm.bmp"
+IDB_BITMAP_SELECT       BITMAP                  "res\\Select_stu.bmp"
+IDB_BITMAP_MODIFYPASSWD BITMAP                  "res\\ModifyPasswd.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "开始(&K)"
+    BEGIN
+        MENUITEM "登陆(&L)",                      ID_LOGIN
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 StudentManageSys(&A)...",  ID_APP_ABOUT
+    END
+END
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "学生学籍(&X)"
+    BEGIN
+        MENUITEM "基本信息",                        ID_XJXX
+    END
+    POPUP "教学安排(&J)"
+    BEGIN
+        MENUITEM "查看个人课表",                      ID_JXGRKB
+        MENUITEM "查看课表[按课程]",                   ID_JXKCKB
+        MENUITEM "查看课表[按教师]",                   ID_JXJSKB
+        MENUITEM "查看课表[按教室]",                   ID_JXBJKB
+    END
+    POPUP "学生成绩(&C)"
+    BEGIN
+        MENUITEM "查看成绩",                        ID_CJCK
+        MENUITEM "成绩分布",                        ID_CJFB
+    END
+    POPUP "其他(&Q)"
+    BEGIN
+        MENUITEM "账号设置",                        ID_XGMM
+        MENUITEM "修改登陆密码",                      ID_32808
+    END
+    MENUITEM "注销(&C)",                      ID_EXIT
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "个人信息(&X)"
+    BEGIN
+        MENUITEM "基本信息",                        ID_XJXX
+    END
+    POPUP "教学安排(&J)"
+    BEGIN
+        MENUITEM "查看个人课表",                      ID_JXGRKB
+        MENUITEM "查看学生课表",                      ID_GLYCKXSKB
+    END
+    POPUP "学生成绩(&C)"
+    BEGIN
+        MENUITEM "录入成绩",                        ID_GLYLRCJ
+        MENUITEM "查看成绩",                        ID_GLYCJCK
+    END
+    POPUP "其他(&Q)"
+    BEGIN
+        MENUITEM "修改密保",                        ID_XGMM
+        MENUITEM "修改密码",                        ID_32808
+    END
+    MENUITEM "注销(&Z)",                      ID_EXIT
+END
+
+IDR_MENU3 MENU
+BEGIN
+    POPUP "用户学籍(&X)"
+    BEGIN
+        MENUITEM "添加新用户",                       ID_32809
+        MENUITEM "录入用户信息",                      ID_32817
+        MENUITEM "录入个人信息",                      ID_XJZC
+        POPUP "查看信息(&D)"
+        BEGIN
+            MENUITEM "个人基本信息",                      ID_XJXX
+            MENUITEM "学生基本信息查询",                    ID_XJBM
+            MENUITEM "教师基本信息查询",                    ID_32819
+        END
+    END
+    POPUP "教学安排(&J)"
+    BEGIN
+        MENUITEM "查看教师课表",                      ID_GLYCXJSKB
+        MENUITEM "查看学生课表",                      ID_GLYCKXSKB
+    END
+    POPUP "学生成绩(&C)"
+    BEGIN
+        MENUITEM "查看成绩",                        ID_CXXSCJ
+    END
+    POPUP "其他(&Q)"
+    BEGIN
+        MENUITEM "修改个人密保",                      ID_XGMM
+        MENUITEM "修改个人密码",                      ID_32808
+        POPUP "修改用户密码"
+        BEGIN
+            MENUITEM "修改学生密码",                      ID_32811
+            MENUITEM "修改教师密码",                      ID_32814
+        END
+    END
+    MENUITEM "注销(&Z)",                      ID_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 StudentManageSys"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "StudentManageSys，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 280, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 14, "宋体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,82,35,80,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWD,82,54,80,15,ES_PASSWORD | ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,83,82,58,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "同户名：",IDC_STATIC,43,37,37,12
+    LTEXT           "密码：",IDC_STATIC,50,58,25,13
+    LTEXT           "登陆方式：",IDC_STATIC,35,81,38,13
+    RTEXT           "选项：",IDC_STATIC,36,109,38,13
+    CONTROL         "记住密码",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,106,46,16
+    CONTROL         "自动登陆",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,148,106,46,16
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 429, 317
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户注册"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ID,121,17,104,21,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT1,121,47,104,21,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT2,121,76,128,19,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT3,121,108,128,19,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO1,121,143,191,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT4,121,172,144,19,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO3,121,199,88,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "输入密码：",IDC_STATIC_Passwd,39,81,72,18
+    RTEXT           "确认密码：",IDC_STATIC_RePasswd,39,113,71,18
+    CONTROL         "显示密码",IDC_RADIO_SHOW,"Button",BS_AUTORADIOBUTTON | WS_GROUP,109,223,55,22
+    CONTROL         "隐藏密码",IDC_RADIO_HIDE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,193,223,55,22
+    RTEXT           "用户名：",IDC_STATIC_Name,53,52,57,18
+    RTEXT           "找回密码提示：",IDC_STATIC_question,15,145,95,18
+    RTEXT           "答案：",IDC_STATIC_answer,53,177,57,18
+    LTEXT           "长度为6-15个字符",IDC_STATIC1,257,76,124,18
+    LTEXT           "长度不能超过10个字符",IDC_STATIC,268,172,143,18
+    EDITTEXT        IDC_EDIT6,121,142,191,18,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    RTEXT           "学号：",IDC_STATIC_ID,53,21,57,18
+    RTEXT           "类型：",IDC_STATIC_STYPE,53,201,57,18
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 347, 198
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "密码恢复"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_Answer,126,106,111,20,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    PUSHBUTTON      "确认",IDC_BUTTON1,109,150,58,24,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "取消",IDC_BUTTON2,193,150,58,24,0,WS_EX_TRANSPARENT
+    LTEXT           "Static",IDC_STATIC_question,126,71,202,16,0,WS_EX_TRANSPARENT
+    RTEXT           "用户：",IDC_STATIC1,41,31,77,19,0,WS_EX_TRANSPARENT
+    RTEXT           "安全问题：",IDC_STATIC2,21,70,97,19,0,WS_EX_TRANSPARENT
+    RTEXT           "答案：",IDC_STATIC3,41,109,77,19,0,WS_EX_TRANSPARENT
+    LTEXT           "Static",IDC_STATIC_Name,123,31,100,17,0,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 317, 223
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 299, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查询"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 257, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查询"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,143,83,88,21,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO1,142,31,88,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    RTEXT           "选择收索方式：",IDC_STATIC1,7,33,127,21
+    RTEXT           "Static",IDC_STATIC2,7,86,127,21
+END
+
+IDD_DIALOG_StuInfo DIALOGEX 0, 0, 452, 299
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD | WS_SYSMENU
+FONT 12, "宋体", 700, 0, 0x86
+BEGIN
+    GROUPBOX        "基本信息",IDC_STATIC1,7,7,143,285,0,WS_EX_TRANSPARENT
+    GROUPBOX        "教育背景",IDC_STATIC2,156,7,289,182,0,WS_EX_TRANSPARENT
+    GROUPBOX        "个人信息",IDC_STATIC3,154,191,291,101,0,WS_EX_TRANSPARENT
+    RTEXT           "姓名：",IDC_STATIC_1,7,54,42,16
+    RTEXT           "年龄：",IDC_STATIC_2,7,85,42,16
+    RTEXT           "性别：",IDC_STATIC_3,7,116,42,16
+    RTEXT           "民族：",IDC_STATIC_4,7,147,42,16
+    RTEXT           "政治面貌：",IDC_STATIC_5,7,178,42,16
+    RTEXT           "目前身份：",IDC_STATIC_6,7,209,42,16
+    RTEXT           "目前所在地：",IDC_STATIC_7,7,240,42,16
+    RTEXT           "毕业年份：",IDC_STATIC_8,7,271,42,16
+    LTEXT           "",IDC_STATIC_9,57,54,82,16
+    LTEXT           "",IDC_STATIC_10,57,85,82,16
+    LTEXT           "",IDC_STATIC_11,57,116,82,16
+    LTEXT           "",IDC_STATIC_12,57,147,82,16
+    LTEXT           "",IDC_STATIC_13,57,178,82,16
+    LTEXT           "",IDC_STATIC_14,57,209,82,16
+    LTEXT           "",IDC_STATIC_15,57,240,82,16
+    LTEXT           "",IDC_STATIC_16,57,271,82,16
+    RTEXT           "学历：",IDC_STATIC_17,157,18,42,16
+    RTEXT           "所在学校：",IDC_STATIC_18,157,47,42,16
+    RTEXT           "所在学院：",IDC_STATIC_19,157,79,42,16
+    RTEXT           "毕业学校：",IDC_STATIC_20,298,18,42,16
+    RTEXT           "所学专业：",IDC_STATIC_21,298,47,42,16
+    RTEXT           "所在年级、班级：",IDC_STATIC_22,286,79,54,16
+    LTEXT           "",IDC_STATIC_23,208,18,81,16
+    LTEXT           "",IDC_STATIC_24,208,47,81,16
+    LTEXT           "",IDC_STATIC_25,208,79,70,16
+    LTEXT           "",IDC_STATIC_26,347,18,98,16
+    LTEXT           "",IDC_STATIC_27,347,47,98,16
+    LTEXT           "",IDC_STATIC_28,347,79,98,16
+    CTEXT           "教育经历",IDC_STATIC_29,229,101,105,14
+    CTEXT           "获奖情况：",IDC_STATIC_30,161,212,32,13
+    CTEXT           "个人擅长：",IDC_STATIC_31,327,212,29,13
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,160,116,277,69,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_LIST4,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,192,201,136,83
+    EDITTEXT        IDC_LIST3,357,201,79,83,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    RTEXT           "学号：",IDC_STATIC_32,7,23,42,16
+    LTEXT           "",IDC_STATIC_33,56,23,82,16
+END
+
+IDD_MODIFY_Info DIALOGEX 0, 0, 485, 229
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "账号设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "学号：",IDC_STATIC1_2,7,51,111,21
+    RTEXT           "密保提示：",IDC_STATIC1_3,7,80,111,21
+    RTEXT           "新问题的答案：",IDC_STATIC1_5,7,137,111,21
+    RTEXT           "当前用户名：",IDC_STATIC1_1,7,23,111,21
+    RTEXT           "新的密保提示：",IDC_STATIC1_4,7,110,111,21
+    EDITTEXT        IDC_EDIT1_3,127,78,231,21,ES_AUTOHSCROLL | WS_DISABLED,WS_EX_TRANSPARENT
+    CONTROL         "修改",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,367,81,47,15
+    EDITTEXT        IDC_EDIT1_4,127,106,231,21,ES_AUTOHSCROLL | WS_DISABLED,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT1_5,127,134,147,21,ES_AUTOHSCROLL | WS_DISABLED,WS_EX_TRANSPARENT
+    LTEXT           "长度不能超过10个字符",IDC_STATIC1_6,289,136,171,18
+    EDITTEXT        IDC_EDIT1_6,127,24,103,21,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT1_7,127,50,103,21,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG8 DIALOGEX 0, 0, 253, 109
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "确认"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "",IDC_STATIC_CONFIRM,7,22,116,20
+    EDITTEXT        IDC_EDIT1,127,22,112,17,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG9 DIALOGEX 0, 0, 351, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "输入新密码：",IDC_STATIC2_1,32,29,81,18
+    RTEXT           "确认密码：",IDC_STATIC2_2,32,60,81,18
+    EDITTEXT        IDC_EDIT1,113,28,113,16,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,113,59,113,16,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "长度为6-15个字符",IDC_STATIC2_3,227,30,93,18
+    CONTROL         "显示密码",IDC_RADIO2_1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,93,92,55,23
+    CONTROL         "隐藏密码",IDC_RADIO2_2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,175,92,55,23
+    GROUPBOX        "密码",IDC_STATIC,73,87,184,32
+END
+
+IDD_DIALOG10 DIALOGEX 0, 0, 477, 316
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "录入基本信息和教育背景"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    RTEXT           "姓名：",IDC_STATIC,34,23,53,19
+    RTEXT           "年龄：",IDC_STATIC,34,50,53,19
+    RTEXT           "性别：",IDC_STATIC,34,77,53,19
+    RTEXT           "民族：",IDC_STATIC,34,104,53,19
+    RTEXT           "政治面貌：",IDC_STATIC,34,131,53,19
+    RTEXT           "目前身份：",IDC_STATIC,34,158,53,19
+    RTEXT           "目前所在地：",IDC_STATIC,34,185,53,19
+    RTEXT           "毕业年份：",IDC_STATIC,34,209,53,19
+    EDITTEXT        IDC_EDIT1,102,21,88,20,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_B1,102,48,88,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B2,102,102,88,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B3,102,183,139,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B4,102,207,92,20,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_B1,102,74,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_B2,102,130,90,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_B3,102,157,64,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "*",IDC_STATIC_B1,199,50,28,15
+    LTEXT           "*",IDC_STATIC_B2,199,103,28,15
+    LTEXT           "*",IDC_STATIC_B3,200,210,28,15
+    RTEXT           "学历：",IDC_STATIC,250,22,51,17
+    RTEXT           "所在学校：",IDC_STATIC,248,49,53,19
+    RTEXT           "所在学院：",IDC_STATIC,248,81,53,19
+    RTEXT           "毕业学校：",IDC_STATIC,248,111,53,19
+    RTEXT           "所学专业：",IDC_STATIC,248,140,53,19
+    RTEXT           "所在年、班级：",IDC_STATIC,210,164,91,15
+    COMBOBOX        IDC_COMBO_B4,310,22,64,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_B5,310,44,92,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B6,310,77,92,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B7,310,107,92,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B8,310,135,92,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B9,310,160,92,20,ES_AUTOHSCROLL
+    LTEXT           "*",IDC_STATIC_B4,409,47,28,15
+    LTEXT           "*",IDC_STATIC_B5,409,76,28,21
+    LTEXT           "*",IDC_STATIC_B6,409,106,28,21
+    LTEXT           "*",IDC_STATIC_B8,409,134,28,21
+    LTEXT           "*",IDC_STATIC_B7,409,158,28,21
+    PUSHBUTTON      "确认",IDC_BUTTON1,272,265,66,32
+    PUSHBUTTON      "取消",IDC_BUTTON2,383,265,66,32
+    LTEXT           "正确格式为：****年**月**号\r\n例如：2016年09月01号",IDC_STATIC_B9,101,231,126,26
+    LTEXT           "正确格式为：****级**班\r\n例如：2012级06班",IDC_STATIC_B10,310,184,152,26
+    RTEXT           "个人特长：",IDC_STATIC,245,209,54,17
+    EDITTEXT        IDC_EDIT_B10,308,210,152,49,ES_MULTILINE | WS_VSCROLL
+END
+
+IDD_DIALOG11 DIALOGEX 0, 0, 286, 177
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "学号：",IDC_STATIC_CH1,21,20,82,22
+    RTEXT           "姓名：",IDC_STATIC_CH2,21,48,82,22
+    EDITTEXT        IDC_EDIT1,110,20,102,20,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,110,49,102,20,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始录入",IDC_BUTTON1,50,122,61,28
+    PUSHBUTTON      "取消",IDC_BUTTON2,144,122,61,28
+    RTEXT           "账号类型：",IDC_STATIC_CH3,21,76,82,22
+    COMBOBOX        IDC_COMBO_CH1,110,79,91,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG12 DIALOGEX 0, 0, 277, 144
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "",IDC_STATIC_SELECT,22,34,86,21
+    EDITTEXT        IDC_EDIT1,121,33,112,22,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "",IDC_BUTTON1,57,99,58,27
+    PUSHBUTTON      "取消",IDC_BUTTON2,161,99,58,27
+    RTEXT           "",IDC_STATIC_SELECT2,22,65,86,21
+    EDITTEXT        IDC_EDIT2,121,63,112,22,ES_AUTOHSCROLL | NOT WS_VISIBLE
+END
+
+IDD_DIALOG13 DIALOGEX 0, 0, 495, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查询成绩"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,481,201
+END
+
+IDD_DIALOG14 DIALOGEX 0, 0, 289, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "成绩录入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "学生学号：",IDC_STATIC_SCORE1,37,28,73,18
+    RTEXT           "成绩：",IDC_STATIC_SCORE2,37,61,73,18
+    COMBOBOX        IDC_COMBO1,127,28,84,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,127,61,81,16,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "下一个学生",IDC_BUTTON1,31,95,56,27
+    PUSHBUTTON      "录入",IDC_BUTTON2,113,95,56,27
+    PUSHBUTTON      "录入完成",IDC_BUTTON3,191,95,56,27
+END
+
+IDD_DIALOG15 DIALOGEX 0, 0, 263, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查询学生成绩"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "学生的学号：",IDC_STATIC_STUDENT1,16,23,88,20
+    EDITTEXT        IDC_EDIT1,115,23,101,20,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "查询",IDC_BUTTON1,52,68,57,29
+    PUSHBUTTON      "取消",IDC_BUTTON2,149,68,57,29
+END
+
+IDD_DIALOG16 DIALOGEX 0, 0, 303, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查询成绩分布"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "输入成绩的上下限：",IDC_STATIC_SCOPE1,23,23,94,19
+    EDITTEXT        IDC_EDIT1,129,23,54,19,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,218,23,54,19,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "--->",IDC_STATIC_SCOPE2,187,23,24,17
+    PUSHBUTTON      "查询",IDC_BUTTON1,57,64,63,27
+    PUSHBUTTON      "取消",IDC_BUTTON2,173,64,63,27
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO:  <公司名>"
+            VALUE "FileDescription", "StudentManageSys"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "StudentManageSys.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "StudentManageSys.exe"
+            VALUE "ProductName", "TODO:  <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DIALOG_StuInfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 445
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+
+    IDD_MODIFY_Info, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 478
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_DIALOG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_DIALOG9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG10, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 470
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 309
+    END
+
+    IDD_DIALOG11, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG12, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG13, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DIALOG14, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_DIALOG15, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALOG16, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。  请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "StudentManageSys\n\nStudentManageSy\n\n\nStudentManageSys.Document\nStudentManageSys.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "StudentManageSys"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除所选内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制所选内容，将其放入剪贴板\n复制"
+    ID_EDIT_CUT             "剪切所选内容，将其放入剪贴板\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "重做上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "将窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\StudentManageSys.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#include "l.CHS\afxprint.rc"    // 打印/打印预览资源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
